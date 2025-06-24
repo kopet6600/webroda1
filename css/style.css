@@ -295,3 +295,14 @@ body {
     font-size: 55%;
   }
 }
+
+.product .brand img {
+  object-position: center;
+  margin-left: 1.2rem;
+}
+
+.about .row .about-img img {
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+}
