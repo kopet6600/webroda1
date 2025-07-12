@@ -142,21 +142,23 @@ body {
 }
 /* produk */
 .product .brand img {
-  width: 12%;
-  padding: 0 0 9px 9px;
+  width: 13%;
+  padding: auto;
 }
 
-.product .product {
-  margin: 0%;
+.product .brand {
+  position: relative;
 }
 /* tentang kami */
 .about,
-.product {
+.product,
+.kontak {
   padding: 7rem 7% 1.2rem;
 }
 
 .about h2,
-.product h2 {
+.product h2,
+.kontak h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -164,22 +166,25 @@ body {
 }
 
 .about h2 span,
-.product h2 span {
+.product h2 span,
+.kontak h2 span {
   color: #00ccbb;
 }
 
 .about .row {
   display: flex;
+  object-position: center;
 }
 
 .about .row .about-img img {
-  width: 93%;
+  width: 100%;
   text-align: center;
 }
 
 .about .row .content {
   flex: 1 1 35rem;
   padding: 0 1rem;
+  padding-left: 2rem;
 }
 
 .about .row .content h3 {
@@ -188,18 +193,21 @@ body {
 }
 
 .product .content h3 {
-  text-align: center;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .about .row .content p,
-.product .content p {
+.product .content h3 {
   margin-bottom: 0.8rem;
   font-size: 1.4rem;
-  font-weight: 100;
+  font-weight: 200%;
   line-height: 1.6;
+}
+
+.product .content h3 {
   text-align: center;
+  list-style: 2;
 }
 
 /* media query */
@@ -264,7 +272,7 @@ body {
   }
 
   .about .row .about-img img {
-    height: 30rem;
+    /* height: 30rem; */
     object-fit: cover;
     object-position: center;
   }
@@ -285,7 +293,7 @@ body {
   }
 
   .product .brand {
-    display: inline;
+    display: inline-block;
   }
 }
 
@@ -302,7 +310,6 @@ body {
 }
 
 .about .row .about-img img {
-  height: 30rem;
   object-fit: cover;
   object-position: center;
 }
