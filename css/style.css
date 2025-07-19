@@ -15,7 +15,6 @@ body {
   font-family: "poppins", sans-serif;
   background-color: #fff;
   color: #0c0909;
-  min-height: 5000px;
 }
 
 /* navbar */
@@ -143,16 +142,16 @@ body {
 /* produk */
 .product .brand img {
   width: 13%;
-  padding: auto;
+  padding: 0.5rem;
 }
 
 .product .brand {
   position: relative;
+  padding: 1rem 7% 1rem;
 }
+
 /* tentang kami */
-.about,
-.product,
-.kontak {
+.about {
   padding: 7rem 7% 1.2rem;
 }
 
@@ -210,6 +209,93 @@ body {
   list-style: 2;
 }
 
+/* kontak */
+.kontak .row {
+  height: 50rem;
+  display: flex;
+  margin-top: 2rem;
+  background-color: rgba(116, 116, 116, 0.151);
+}
+
+.kontak .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.kontak .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.kontak .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #bbbabab2;
+  border: 1px solid #000000;
+  padding-left: 2rem;
+}
+
+.kontak .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #000000;
+}
+
+.kontak .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #ffffff;
+  background-color: #202f2b;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: #202f2b;
+  text-align: center;
+  padding:0
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: #00ccbb;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+footer .credit a {
+  color: #00ccbb;
+  font-weight: 700;
+  padding: 10;
+}
 /* media query */
 
 /* laptop */
@@ -294,6 +380,18 @@ body {
 
   .product .brand {
     display: inline-block;
+  }
+
+  .kontak .row {
+    flex-wrap: wrap;
+  }
+
+  .kontak .row map {
+    height: 30rem;
+  }
+
+  .kontak .row form {
+    padding-top: 0;
   }
 }
 
